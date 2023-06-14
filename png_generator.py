@@ -5,14 +5,15 @@ from PIL import Image, ImageDraw, ImageFont
 нашей GTD схемы
 '''
 
-array = [['text_quest_1', 'лох'], ['text_quest_2', 'text_if_no_2'], ['text_quest_3', 'text_if_no_3'], 
-         ['text_quest_4', 'text_if_no_4'], ['text_quest_5', 'text_if_no_5'], 'name_of_last_list']
+array = [['text_quest_1', 'text_if_no1'], ['text_quest_2', 'text_if_no_2'], ['text_quest_3', 'text_if_no_3'], 
+         ['text_quest_4', 'text_if_no_4'], ['text_quest_5', 'text_if_no_5'], ['text_quest_6', 'text_if_no_6'], ['text_quest_7', 'text_if_no_7'], 
+         ['text_quest_8', 'text_if_no_8'], 'name_of_last_list']
 
 
 class Png_generator:
 
     def __init__(self):
-        self.image = Image.new('RGB', (1800,1800), (255,255,255)) # создаем полотно 1800 на 1800 пикселей белого цвета
+        self.image = Image.new('RGB', (1800,2000), (255,255,255)) # создаем полотно 1800 на 1800 пикселей белого цвета
         self.draw = ImageDraw.Draw(self.image)
         self.font = ImageFont.truetype('arial.ttf', size=32)
         self.x = 800
